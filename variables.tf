@@ -1,7 +1,7 @@
 # Variables Configuration
 
 variable "cluster-name" {
-  default     = "eks-cluster"
+  default     = "colosseumusa-tf"
   type        = string
   description = "The name of your EKS Cluster"
 }
@@ -68,7 +68,7 @@ variable "eks-cw-logging" {
 }
 
 variable "node-instance-type" {
-  default     = "m3.medium"
+  default     = "t3.medium"
   type        = string
   description = "Worker Node EC2 instance type"
 }
@@ -99,19 +99,19 @@ variable "min-size" {
 }
 
 variable "public-min-size" {
-  default     = 1
+  default     = 3
   type        = string
   description = "Public Node groups min ASG capacity"
 }
 
 variable "public-max-size" {
-  default     = 1
+  default     = 3
   type        = string
   description = "Public Node groups max ASG capacity"
 }
 
 variable "public-desired-capacity" {
-  default     = 1
+  default     = 3
   type        = string
   description = "Public Node groups desired ASG capacity"
 }
