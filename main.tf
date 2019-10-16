@@ -23,6 +23,5 @@ module "eks" {
   eks-cw-logging           = var.eks-cw-logging
   ec2-key-public-key       = var.ec2-key-public-key
 
-
 }
 
