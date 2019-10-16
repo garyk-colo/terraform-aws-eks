@@ -101,7 +101,7 @@ variable "min-size" {
 }
 
 variable "public-min-size" {
-  default     = 3
+  default     = 1
   type        = string
   description = "Public Node groups min ASG capacity"
 }
