@@ -22,6 +22,9 @@ module "eks" {
   db-subnet-cidr           = var.db-subnet-cidr
   eks-cw-logging           = var.eks-cw-logging
   ec2-key-public-key       = var.ec2-key-public-key
+  aws_access_key           = var.aws_access_key
+  aws_secret_key           = var.aws_secret_key
+
 
 }
 
