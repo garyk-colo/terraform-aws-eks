@@ -1,15 +1,11 @@
 # Variables Configuration
 
 variable "aws_access_key" {
-  default     = "${var.aws_access_key}"
   type        = string
-  description = "The name of your EKS Cluster"
   }
 
 variable "aws_secret_key" {
-  default     = ${var.aws_secret_key}""
   type        = string
-  description = "The name of your EKS Cluster"
   }
 
 variable "cluster-name" {
