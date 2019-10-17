@@ -3,6 +3,8 @@
 module "eks" {
   source                   = "./modules/eks"
   aws-region               = var.aws-region
+  aws_access_key           = var.aws_access_key
+  aws_secret_key           = var.aws_secret_key
   availability-zones       = var.availability-zones
   cluster-name             = var.cluster-name
   k8s-version              = var.k8s-version
