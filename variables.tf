@@ -1,4 +1,6 @@
 # Variables Configuration
+variable "aws_access_key" {}
+variable "aws_secret_key" {}
 
 variable "cluster-name" {
   default     = "colosseumusa-tf"
