@@ -15,7 +15,7 @@ module "eks" {
   desired-capacity         = "3"
   max-size                 = "5"
   min-size                 = "1"
-  public-min-size          = "1" # setting to 0 will create the launch config etc, but no nodes will deploy"
+  public-min-size          = "0" # setting to 0 will create the launch config etc, but no nodes will deploy"
   public-max-size          = "5"
   public-desired-capacity  = "3"
   vpc-subnet-cidr          = "10.0.0.0/16"
