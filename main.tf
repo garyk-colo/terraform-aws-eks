@@ -1,6 +1,5 @@
 # EKS Terraform module
 
-
 module "eks" {
   source                   = "./modules/eks"
   aws-region               = "us-west-2"
@@ -10,6 +9,8 @@ module "eks" {
   cluster-name             = "colosseumusa-tf"
   k8s-version              = "1.14"
   node-instance-type       = "t3.medium"
+  kublet-extra-args        = var.kublet-extra-args
+  public-kublet-extra-args = var.public-kublet-extra-args
   root-block-size          = "40"
   desired-capacity         = "3"
   max-size                 = "5"
