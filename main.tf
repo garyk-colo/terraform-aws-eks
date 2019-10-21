@@ -13,7 +13,7 @@ module "eks" {
   public-kublet-extra-args = var.public-kublet-extra-args
   root-block-size          = "40"
   desired-capacity         = "0"
-  max-size                 = "5"
+  max-size                 = "0"
   min-size                 = "0"
   public-min-size          = "1" # setting to 0 will create the launch config etc, but no nodes will deploy"
   public-max-size          = "5"
