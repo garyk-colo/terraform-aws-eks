@@ -65,6 +65,7 @@ resource "aws_iam_role_policy_attachment" "node-AmazonEKS_CNI_Policy" {
 #  role       = "${aws_iam_role.node.name}"
 #}
 
+# for Jenkins-x 
 resource "aws_iam_role_policy_attachment" "node-AmazonEC2ContainerRegistryPowerUser" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser"
   role       = "${aws_iam_role.node.name}"
