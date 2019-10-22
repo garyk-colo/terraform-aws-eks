@@ -83,19 +83,19 @@ variable "root-block-size" {
 }
 
 variable "desired-capacity" {
-  default     = 3
+  default     = 0
   type        = string
   description = "Autoscaling Desired node capacity"
 }
 
 variable "max-size" {
-  default     = 5
+  default     = 0
   type        = string
   description = "Autoscaling maximum node capacity"
 }
 
 variable "min-size" {
-  default     = 1
+  default     = 0
   type        = string
   description = "Autoscaling Minimum node capacity"
 }
