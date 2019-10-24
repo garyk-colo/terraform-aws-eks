@@ -1,5 +1,6 @@
 
 variable "region" {
+    default ="us-west-2"
 }
 
 provider "aws" {
