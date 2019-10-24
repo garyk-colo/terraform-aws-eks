@@ -1,6 +1,7 @@
 
 variable "bucket_domain" {
-    value = "jx-colosseumusa"
+    default = "jx-colosseumusa"
+    type        = string
     description = "Suffix for S3 bucket used for vault unseal operation"
 }
 
