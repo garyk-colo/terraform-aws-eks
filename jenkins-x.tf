@@ -2,6 +2,10 @@
 variable "region" {
 }
 
+provider "aws" {
+    region  = "${var.aws-region}"
+}
+
 variable "bucket_domain" {
     default = "jx-colosseumusa"
     type        = string
