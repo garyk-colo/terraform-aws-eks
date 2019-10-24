@@ -1,4 +1,7 @@
 
+variable "region" {
+}
+
 variable "bucket_domain" {
     default = "jx-colosseumusa"
     type        = string
