@@ -1,6 +1,6 @@
 
 variable "bucket_domain" {
-    name = "jx-colosseumusa"
+    value = "jx-colosseumusa"
     description = "Suffix for S3 bucket used for vault unseal operation"
 }
 
