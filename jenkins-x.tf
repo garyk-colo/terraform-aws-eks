@@ -1,6 +1,6 @@
 # Create S3 bucket for KMS
 resource "aws_s3_bucket" "vault-unseal" {
-    bucket = "vault-unseal.${var.region}.${var.bucket_domain}"
+    bucket = "vault-unseal.${var.aws-region}.${var.bucket_domain}"
     acl    = "private"
 
     versioning {
@@ -33,7 +33,7 @@ resource "aws_dynamodb_table" "vault-data" {
 
 # Create service account for vault. Should the policy
 resource "aws_iam_user" "vault" {
-  name = "vault_${var.region}"
+  name = "vault_${var.aws-region}"
 }
 
 data "aws_iam_policy_document" "vault" {
@@ -91,7 +91,7 @@ data "aws_iam_policy_document" "vault" {
 }
 
 resource "aws_iam_user_policy" "vault" {
-    name = "vault_${var.region}"
+    name = "vault_${var.aws-region}"
     user = "${aws_iam_user.vault.name}"
 
     policy = "${data.aws_iam_policy_document.vault.json}"
