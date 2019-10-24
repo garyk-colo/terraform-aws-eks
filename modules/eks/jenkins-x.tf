@@ -1,5 +1,3 @@
-variable "aws-region" {}
-
 # Create S3 bucket for KMS
 resource "aws_s3_bucket" "vault-unseal" {
     bucket = "vault-unseal.${var.aws-region}.${var.bucket_domain}"
