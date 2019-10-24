@@ -1,3 +1,8 @@
+
+variable "bucket_domain" {
+    description = "Suffix for S3 bucket used for vault unseal operation"
+}
+
 # Create S3 bucket for KMS
 resource "aws_s3_bucket" "vault-unseal" {
     bucket = "vault-unseal.${var.aws-region}.${var.bucket_domain}"
