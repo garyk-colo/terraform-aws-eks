@@ -5,6 +5,8 @@ variable "region" {
 
 provider "aws" {
     region  = "${var.aws-region}"
+    access_key = "${var.aws_access_key}"
+    secret_key = "${var.aws_secret_key}"
 }
 
 variable "bucket_domain" {
